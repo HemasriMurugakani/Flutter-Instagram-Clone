@@ -110,7 +110,7 @@ class PostCart extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 14.0),
                   child: Text(
-                    'feistyflare',
+                    'ig_username',
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
@@ -133,7 +133,7 @@ class PostCart extends StatelessWidget {
           child: Row(
             children: [
               Text(
-                'view 54 comments',
+                'view 14 comments',
                 style: TextStyle(color: Colors.grey.shade500),
               ),
             ],

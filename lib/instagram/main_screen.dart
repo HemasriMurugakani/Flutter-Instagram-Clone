@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:practice_widgets/instagram/home_screen.dart';
-import 'package:practice_widgets/instagram/profile_scree.dart';
+import 'package:practice_widgets/instagram/profile_screen.dart';
 import 'package:practice_widgets/instagram/reels_screen.dart';
 import 'package:practice_widgets/instagram/search_screen.dart';
 import 'package:practice_widgets/instagram/shop_screen.dart';
@@ -80,18 +79,18 @@ class _MainScreenState extends State<MainScreen> {
 
 class HomeScreen extends StatelessWidget {
   final List<String> _stories = [
-    'story 1',
-    'story 2',
-    'story 3',
-    'story 4',
-    'story 5'
+    'Story 1',
+    'Story 2',
+    'Story 3',
+    'Story 4',
+    'Story 5'
   ];
   final List<String> _posts = [
-    'post 1',
-    'post 2',
-    'post 3',
-    'post 4',
-    'post 5'
+    'Post 1',
+    'Post 2',
+    'Post 3',
+    'Post 4',
+    'Post 5'
   ];
 
   HomeScreen({Key? key}) : super(key: key);
@@ -118,6 +117,7 @@ class HomeScreen extends StatelessWidget {
                 child: Icon(
                   Icons.add_box_outlined,
                   size: 30,
+                  color: Colors.white,
                 ),
               ),
               Padding(
@@ -125,6 +125,7 @@ class HomeScreen extends StatelessWidget {
                 child: Icon(
                   Icons.favorite_outline_rounded,
                   size: 30,
+                  color: Colors.white,
                 ),
               ),
               Padding(
@@ -132,6 +133,7 @@ class HomeScreen extends StatelessWidget {
                 child: Icon(
                   Icons.energy_savings_leaf_outlined,
                   size: 30,
+                  color: Colors.white,
                 ),
               ),
             ],
@@ -178,7 +180,7 @@ class HomeScreen extends StatelessWidget {
 }
 
 void main() {
-  runApp(MaterialApp(
-    home: const MainScreen(),
+  runApp(const MaterialApp(
+    home: MainScreen(),
   ));
 }
