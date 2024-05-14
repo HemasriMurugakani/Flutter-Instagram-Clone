@@ -12,7 +12,7 @@ class CircleStory extends StatelessWidget {
           height: 68,
           width: 68,
           image: NetworkImage(
-              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBlaCxzgPYrLlckCjrWzmyS4K5fBeImVhFSgFyNp4dg&s'),
+              'https://i.pinimg.com/originals/1f/51/03/1f51038bd5af319dd132a3fab9ee3b57.png'),
           fit: BoxFit.cover,
         ),
       ),

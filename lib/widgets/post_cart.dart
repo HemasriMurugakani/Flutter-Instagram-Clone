@@ -22,7 +22,7 @@ class PostCart extends StatelessWidget {
                   width: 3,
                 ),
                 Text(
-                  'feistyflare',
+                  'ig_username',
                   style: TextStyle(color: Colors.white, fontSize: 15),
                 )
               ],

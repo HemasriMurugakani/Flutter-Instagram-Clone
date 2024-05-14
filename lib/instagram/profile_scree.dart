@@ -18,7 +18,7 @@ class ProfileScreen extends StatelessWidget {
             automaticallyImplyLeading: false,
             backgroundColor: Colors.black,
             title: const Text(
-              'feistyflare',
+              'insta_username',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             actions: [
@@ -120,7 +120,7 @@ class ProfileScreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(left: 8.0),
                     child: Text(
-                      'Hemasri Murugakani',
+                      'ig_username',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
