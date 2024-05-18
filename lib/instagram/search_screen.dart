@@ -24,6 +24,7 @@ class SearchScreen extends StatelessWidget {
         itemBuilder: (context, index) => ImageCart(
           imageData: imageList[index],
         ),
+        
       ),
     );
   }

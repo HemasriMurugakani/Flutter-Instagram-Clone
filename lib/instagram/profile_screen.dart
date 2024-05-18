@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:practice_widgets/instagram/register_screen.dart';
+import 'package:practice_widgets/instagram/login_screen.dart';
 import 'package:practice_widgets/widgets/circle_story.dart';
 import 'package:practice_widgets/widgets/story_widget.dart';
+import 'package:practice_widgets/instagram/settingspage.dart';
+import 'package:practice_widgets/instagram/post_page.dart'; 
 
 class ProfileScreen extends StatelessWidget {
   final List<String> _stories = [
@@ -30,19 +33,29 @@ class ProfileScreen extends StatelessWidget {
           actions: [
             Row(
               children: [
-                const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.add_box_outlined,
-                    size: 30,
-                    color: Colors.white,
+                InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            PostPage(), 
+                      ),
+                    );
+                  },
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.add_box_outlined,
+                      size: 30,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const LoginScreen(),
+                        builder: (context) => SettingsPage(),
                       ),
                     );
                   },
@@ -156,7 +169,7 @@ class ProfileScreen extends StatelessWidget {
                     height: 30,
                     width: 330,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 253, 252, 252),
+                        color: const Color.fromARGB(255, 253, 252, 252),
                         borderRadius: BorderRadius.circular(8)),
                     child: const Center(
                         child: Text(
@@ -172,7 +185,7 @@ class ProfileScreen extends StatelessWidget {
                     height: 30,
                     width: 30,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 247, 245, 245),
+                        color: const Color.fromARGB(255, 247, 245, 245),
                         borderRadius: BorderRadius.circular(8)),
                     child: const Center(
                       child: Icon(
@@ -198,17 +211,6 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ],
             ),
-            // const Row(
-            //   children: [
-            //     Padding(
-            //       padding: EdgeInsets.only(top: 6.0, left: 18),
-            //       child: Text(
-            //         'Keep your favorite stories on your profile',
-            //         style: TextStyle(color: Colors.white),
-            //       ),
-            //     ),
-            //   ],
-            // ),
             SizedBox(
               height: 120,
               child: ListView.builder(
